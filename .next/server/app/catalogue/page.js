@@ -89,6 +89,149 @@ module.exports = require("next/dist\\client\\components\\static-generation-async
 
 /***/ }),
 
+/***/ "buffer":
+/*!*************************!*\
+  !*** external "buffer" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "net":
+/*!**********************!*\
+  !*** external "net" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("net");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "punycode":
+/*!***************************!*\
+  !*** external "punycode" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("punycode");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tls":
+/*!**********************!*\
+  !*** external "tls" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tls");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
+/***/ }),
+
 /***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fcatalogue%2Fpage&page=%2Fcatalogue%2Fpage&appPaths=%2Fcatalogue%2Fpage&pagePath=private-next-app-dir%2Fcatalogue%2Fpage.js&appDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fcatalogue%2Fpage&page=%2Fcatalogue%2Fpage&appPaths=%2Fcatalogue%2Fpage&pagePath=private-next-app-dir%2Fcatalogue%2Fpage.js&appDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D! ***!
@@ -120,13 +263,35 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true!":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true! ***!
-  \******************************************************************************************************/
-/***/ (() => {
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp%5Ccatalogue%5Cpage.js&server=true!":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp%5Ccatalogue%5Cpage.js&server=true! ***!
+  \*******************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/catalogue/page.js */ \"(ssr)/./src/app/catalogue/page.js\"))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9QyUzQSU1Q1VzZXJzJTVDcGMlNUNDYXNjYWRlUHJvamVjdHMlNUNzb3VuZC1yZW50YWwtYXBwJTVDc3JjJTVDYXBwJTVDY2F0YWxvZ3VlJTVDcGFnZS5qcyZzZXJ2ZXI9dHJ1ZSEiLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zb3VuZC1yZW50YWwtYXBwLz80YjlkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiQzpcXFxcVXNlcnNcXFxccGNcXFxcQ2FzY2FkZVByb2plY3RzXFxcXHNvdW5kLXJlbnRhbC1hcHBcXFxcc3JjXFxcXGFwcFxcXFxjYXRhbG9ndWVcXFxccGFnZS5qc1wiKSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp%5Ccatalogue%5Cpage.js&server=true!\n");
 
+/***/ }),
+
+/***/ "(ssr)/./src/app/catalogue/page.js":
+/*!***********************************!*\
+  !*** ./src/app/catalogue/page.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Catalogue)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _utils_supabase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/supabase */ \"(ssr)/./src/utils/supabase.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/image */ \"(ssr)/./node_modules/next/image.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_3__);\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nfunction Catalogue() {\n    const [equipment, setEquipment] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        fetchEquipment();\n    }, []);\n    const fetchEquipment = async ()=>{\n        try {\n            const { data, error } = await _utils_supabase__WEBPACK_IMPORTED_MODULE_2__.supabase.from(\"equipment\").select(\"*\");\n            if (error) throw error;\n            setEquipment(data || []);\n        } catch (error) {\n            console.error(\"Error fetching equipment:\", error);\n        } finally{\n            setLoading(false);\n        }\n    };\n    if (loading) {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"container mx-auto px-4 py-8\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"text-center\",\n                children: \"Chargement...\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                lineNumber: 32,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n            lineNumber: 31,\n            columnNumber: 7\n        }, this);\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"container mx-auto px-4 py-8\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                className: \"text-4xl font-bold mb-8\",\n                children: \"Catalogue des \\xc9quipements\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                lineNumber: 39,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\",\n                children: equipment.map((item)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"bg-white rounded-lg shadow-md overflow-hidden\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"relative h-48 bg-gray-200\",\n                                children: item.image_url && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {\n                                    src: item.image_url,\n                                    alt: item.name,\n                                    fill: true,\n                                    className: \"object-cover\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                    lineNumber: 46,\n                                    columnNumber: 17\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                lineNumber: 44,\n                                columnNumber: 13\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"p-4\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                                        className: \"text-xl font-semibold mb-2\",\n                                        children: item.name\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                        lineNumber: 55,\n                                        columnNumber: 15\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                        className: \"text-gray-600 mb-4\",\n                                        children: item.description\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                        lineNumber: 56,\n                                        columnNumber: 15\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"flex justify-between items-center\",\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                                className: \"text-lg font-bold text-blue-600\",\n                                                children: [\n                                                    item.price,\n                                                    \"€/jour\"\n                                                ]\n                                            }, void 0, true, {\n                                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                                lineNumber: 58,\n                                                columnNumber: 17\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                                className: \"bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600\",\n                                                children: \"R\\xe9server\"\n                                            }, void 0, false, {\n                                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                                lineNumber: 59,\n                                                columnNumber: 17\n                                            }, this)\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                        lineNumber: 57,\n                                        columnNumber: 15\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                lineNumber: 54,\n                                columnNumber: 13\n                            }, this)\n                        ]\n                    }, item.id, true, {\n                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                        lineNumber: 43,\n                        columnNumber: 11\n                    }, this))\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                lineNumber: 41,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n        lineNumber: 38,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2NhdGFsb2d1ZS9wYWdlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUM0QztBQUNJO0FBQ2pCO0FBRWhCLFNBQVNJO0lBQ3RCLE1BQU0sQ0FBQ0MsV0FBV0MsYUFBYSxHQUFHTiwrQ0FBUUEsQ0FBQyxFQUFFO0lBQzdDLE1BQU0sQ0FBQ08sU0FBU0MsV0FBVyxHQUFHUiwrQ0FBUUEsQ0FBQztJQUV2Q0MsZ0RBQVNBLENBQUM7UUFDUlE7SUFDRixHQUFHLEVBQUU7SUFFTCxNQUFNQSxpQkFBaUI7UUFDckIsSUFBSTtZQUNGLE1BQU0sRUFBRUMsSUFBSSxFQUFFQyxLQUFLLEVBQUUsR0FBRyxNQUFNVCxxREFBUUEsQ0FDbkNVLElBQUksQ0FBQyxhQUNMQyxNQUFNLENBQUM7WUFFVixJQUFJRixPQUFPLE1BQU1BO1lBQ2pCTCxhQUFhSSxRQUFRLEVBQUU7UUFDekIsRUFBRSxPQUFPQyxPQUFPO1lBQ2RHLFFBQVFILEtBQUssQ0FBQyw2QkFBNkJBO1FBQzdDLFNBQVU7WUFDUkgsV0FBVztRQUNiO0lBQ0Y7SUFFQSxJQUFJRCxTQUFTO1FBQ1gscUJBQ0UsOERBQUNRO1lBQUlDLFdBQVU7c0JBQ2IsNEVBQUNEO2dCQUFJQyxXQUFVOzBCQUFjOzs7Ozs7Ozs7OztJQUduQztJQUVBLHFCQUNFLDhEQUFDRDtRQUFJQyxXQUFVOzswQkFDYiw4REFBQ0M7Z0JBQUdELFdBQVU7MEJBQTBCOzs7Ozs7MEJBRXhDLDhEQUFDRDtnQkFBSUMsV0FBVTswQkFDWlgsVUFBVWEsR0FBRyxDQUFDLENBQUNDLHFCQUNkLDhEQUFDSjt3QkFBa0JDLFdBQVU7OzBDQUMzQiw4REFBQ0Q7Z0NBQUlDLFdBQVU7MENBQ1pHLEtBQUtDLFNBQVMsa0JBQ2IsOERBQUNqQixtREFBS0E7b0NBQ0prQixLQUFLRixLQUFLQyxTQUFTO29DQUNuQkUsS0FBS0gsS0FBS0ksSUFBSTtvQ0FDZEMsSUFBSTtvQ0FDSlIsV0FBVTs7Ozs7Ozs7Ozs7MENBSWhCLDhEQUFDRDtnQ0FBSUMsV0FBVTs7a0RBQ2IsOERBQUNTO3dDQUFHVCxXQUFVO2tEQUE4QkcsS0FBS0ksSUFBSTs7Ozs7O2tEQUNyRCw4REFBQ0c7d0NBQUVWLFdBQVU7a0RBQXNCRyxLQUFLUSxXQUFXOzs7Ozs7a0RBQ25ELDhEQUFDWjt3Q0FBSUMsV0FBVTs7MERBQ2IsOERBQUNZO2dEQUFLWixXQUFVOztvREFBbUNHLEtBQUtVLEtBQUs7b0RBQUM7Ozs7Ozs7MERBQzlELDhEQUFDQztnREFBT2QsV0FBVTswREFBNkQ7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7dUJBaEIzRUcsS0FBS1ksRUFBRTs7Ozs7Ozs7Ozs7Ozs7OztBQTBCM0IiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zb3VuZC1yZW50YWwtYXBwLy4vc3JjL2FwcC9jYXRhbG9ndWUvcGFnZS5qcz9hNjRmIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50JztcbmltcG9ydCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBzdXBhYmFzZSB9IGZyb20gJy4uLy4uL3V0aWxzL3N1cGFiYXNlJztcbmltcG9ydCBJbWFnZSBmcm9tICduZXh0L2ltYWdlJztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ2F0YWxvZ3VlKCkge1xuICBjb25zdCBbZXF1aXBtZW50LCBzZXRFcXVpcG1lbnRdID0gdXNlU3RhdGUoW10pO1xuICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZSh0cnVlKTtcblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGZldGNoRXF1aXBtZW50KCk7XG4gIH0sIFtdKTtcblxuICBjb25zdCBmZXRjaEVxdWlwbWVudCA9IGFzeW5jICgpID0+IHtcbiAgICB0cnkge1xuICAgICAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2VcbiAgICAgICAgLmZyb20oJ2VxdWlwbWVudCcpXG4gICAgICAgIC5zZWxlY3QoJyonKTtcblxuICAgICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjtcbiAgICAgIHNldEVxdWlwbWVudChkYXRhIHx8IFtdKTtcbiAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgY29uc29sZS5lcnJvcignRXJyb3IgZmV0Y2hpbmcgZXF1aXBtZW50OicsIGVycm9yKTtcbiAgICB9IGZpbmFsbHkge1xuICAgICAgc2V0TG9hZGluZyhmYWxzZSk7XG4gICAgfVxuICB9O1xuXG4gIGlmIChsb2FkaW5nKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyIG14LWF1dG8gcHgtNCBweS04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXJcIj5DaGFyZ2VtZW50Li4uPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICApO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciBteC1hdXRvIHB4LTQgcHktOFwiPlxuICAgICAgPGgxIGNsYXNzTmFtZT1cInRleHQtNHhsIGZvbnQtYm9sZCBtYi04XCI+Q2F0YWxvZ3VlIGRlcyDDiXF1aXBlbWVudHM8L2gxPlxuICAgICAgXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMgZ2FwLTZcIj5cbiAgICAgICAge2VxdWlwbWVudC5tYXAoKGl0ZW0pID0+IChcbiAgICAgICAgICA8ZGl2IGtleT17aXRlbS5pZH0gY2xhc3NOYW1lPVwiYmctd2hpdGUgcm91bmRlZC1sZyBzaGFkb3ctbWQgb3ZlcmZsb3ctaGlkZGVuXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGgtNDggYmctZ3JheS0yMDBcIj5cbiAgICAgICAgICAgICAge2l0ZW0uaW1hZ2VfdXJsICYmIChcbiAgICAgICAgICAgICAgICA8SW1hZ2VcbiAgICAgICAgICAgICAgICAgIHNyYz17aXRlbS5pbWFnZV91cmx9XG4gICAgICAgICAgICAgICAgICBhbHQ9e2l0ZW0ubmFtZX1cbiAgICAgICAgICAgICAgICAgIGZpbGxcbiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cIm9iamVjdC1jb3ZlclwiXG4gICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgKX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwLTRcIj5cbiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQteGwgZm9udC1zZW1pYm9sZCBtYi0yXCI+e2l0ZW0ubmFtZX08L2gzPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWdyYXktNjAwIG1iLTRcIj57aXRlbS5kZXNjcmlwdGlvbn08L3A+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LWJvbGQgdGV4dC1ibHVlLTYwMFwiPntpdGVtLnByaWNlfeKCrC9qb3VyPC9zcGFuPlxuICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYmctYmx1ZS01MDAgdGV4dC13aGl0ZSBweC00IHB5LTIgcm91bmRlZCBob3ZlcjpiZy1ibHVlLTYwMFwiPlxuICAgICAgICAgICAgICAgICAgUsOpc2VydmVyXG4gICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICkpfVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibmFtZXMiOlsidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJzdXBhYmFzZSIsIkltYWdlIiwiQ2F0YWxvZ3VlIiwiZXF1aXBtZW50Iiwic2V0RXF1aXBtZW50IiwibG9hZGluZyIsInNldExvYWRpbmciLCJmZXRjaEVxdWlwbWVudCIsImRhdGEiLCJlcnJvciIsImZyb20iLCJzZWxlY3QiLCJjb25zb2xlIiwiZGl2IiwiY2xhc3NOYW1lIiwiaDEiLCJtYXAiLCJpdGVtIiwiaW1hZ2VfdXJsIiwic3JjIiwiYWx0IiwibmFtZSIsImZpbGwiLCJoMyIsInAiLCJkZXNjcmlwdGlvbiIsInNwYW4iLCJwcmljZSIsImJ1dHRvbiIsImlkIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/app/catalogue/page.js\n");
+
+/***/ }),
+
+/***/ "(ssr)/./src/utils/supabase.js":
+/*!*******************************!*\
+  !*** ./src/utils/supabase.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   supabase: () => (/* binding */ supabase)\n/* harmony export */ });\n/* harmony import */ var _supabase_supabase_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/supabase-js */ \"(ssr)/./node_modules/@supabase/supabase-js/dist/module/index.js\");\n\nconst supabaseUrl = \"https://kssiblcnpgswdhcontnr.supabase.co\";\nconst supabaseAnonKey = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtzc2libGNucGdzd2RoY29udG5yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIwNzUwOTQsImV4cCI6MjA1NzY1MTA5NH0.TclcuZeJPl4GrySqLeCxQcJF-2MmUPflUYs27xcCq5Q\";\nif (!supabaseUrl || !supabaseAnonKey) {\n    throw new Error(\"Missing Supabase environment variables\");\n}\nconst supabase = (0,_supabase_supabase_js__WEBPACK_IMPORTED_MODULE_0__.createClient)(supabaseUrl, supabaseAnonKey);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvdXRpbHMvc3VwYWJhc2UuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBcUQ7QUFFckQsTUFBTUMsY0FBY0MsMENBQW9DO0FBQ3hELE1BQU1HLGtCQUFrQkgsa05BQXlDO0FBRWpFLElBQUksQ0FBQ0QsZUFBZSxDQUFDSSxpQkFBaUI7SUFDcEMsTUFBTSxJQUFJRSxNQUFNO0FBQ2xCO0FBRU8sTUFBTUMsV0FBV1IsbUVBQVlBLENBQUNDLGFBQWFJLGlCQUFpQiIsInNvdXJjZXMiOlsid2VicGFjazovL3NvdW5kLXJlbnRhbC1hcHAvLi9zcmMvdXRpbHMvc3VwYWJhc2UuanM/MzRhOCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjcmVhdGVDbGllbnQgfSBmcm9tICdAc3VwYWJhc2Uvc3VwYWJhc2UtanMnO1xuXG5jb25zdCBzdXBhYmFzZVVybCA9IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX1VSTDtcbmNvbnN0IHN1cGFiYXNlQW5vbktleSA9IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX0FOT05fS0VZO1xuXG5pZiAoIXN1cGFiYXNlVXJsIHx8ICFzdXBhYmFzZUFub25LZXkpIHtcbiAgdGhyb3cgbmV3IEVycm9yKCdNaXNzaW5nIFN1cGFiYXNlIGVudmlyb25tZW50IHZhcmlhYmxlcycpO1xufVxuXG5leHBvcnQgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoc3VwYWJhc2VVcmwsIHN1cGFiYXNlQW5vbktleSk7XG4iXSwibmFtZXMiOlsiY3JlYXRlQ2xpZW50Iiwic3VwYWJhc2VVcmwiLCJwcm9jZXNzIiwiZW52IiwiTkVYVF9QVUJMSUNfU1VQQUJBU0VfVVJMIiwic3VwYWJhc2VBbm9uS2V5IiwiTkVYVF9QVUJMSUNfU1VQQUJBU0VfQU5PTl9LRVkiLCJFcnJvciIsInN1cGFiYXNlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/utils/supabase.js\n");
 
 /***/ }),
 
@@ -148,7 +313,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Catalogue)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Catalogue() {\n    const equipments = [\n        {\n            id: 1,\n            name: \"Enceinte Active 1000W\",\n            description: \"Enceinte professionnelle avec amplification int\\xe9gr\\xe9e\",\n            price: \"80€/jour\",\n            image: \"/images/speaker.jpg\"\n        },\n        {\n            id: 2,\n            name: \"Table de Mixage 16 Voies\",\n            description: \"Console de mixage num\\xe9rique professionnelle\",\n            price: \"120€/jour\",\n            image: \"/images/mixer.jpg\"\n        },\n        {\n            id: 3,\n            name: \"Kit Microphones\",\n            description: \"Ensemble de 4 microphones dynamiques avec supports\",\n            price: \"60€/jour\",\n            image: \"/images/mics.jpg\"\n        }\n    ];\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"container mx-auto px-4 py-8\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                className: \"text-4xl font-bold mb-8\",\n                children: \"Catalogue des \\xc9quipements\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                lineNumber: 28,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\",\n                children: equipments.map((item)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"bg-white rounded-lg shadow-md overflow-hidden\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"h-48 bg-gray-200\"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                lineNumber: 33,\n                                columnNumber: 13\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"p-4\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                                        className: \"text-xl font-semibold mb-2\",\n                                        children: item.name\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                        lineNumber: 37,\n                                        columnNumber: 15\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                        className: \"text-gray-600 mb-4\",\n                                        children: item.description\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                        lineNumber: 38,\n                                        columnNumber: 15\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"flex justify-between items-center\",\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                                className: \"text-lg font-bold text-blue-600\",\n                                                children: item.price\n                                            }, void 0, false, {\n                                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                                lineNumber: 40,\n                                                columnNumber: 17\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                                className: \"bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600\",\n                                                children: \"R\\xe9server\"\n                                            }, void 0, false, {\n                                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                                lineNumber: 41,\n                                                columnNumber: 17\n                                            }, this)\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                        lineNumber: 39,\n                                        columnNumber: 15\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                                lineNumber: 36,\n                                columnNumber: 13\n                            }, this)\n                        ]\n                    }, item.id, true, {\n                        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                        lineNumber: 32,\n                        columnNumber: 11\n                    }, this))\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n                lineNumber: 30,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\pc\\\\CascadeProjects\\\\sound-rental-app\\\\src\\\\app\\\\catalogue\\\\page.js\",\n        lineNumber: 27,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2NhdGFsb2d1ZS9wYWdlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBZSxTQUFTQTtJQUN0QixNQUFNQyxhQUFhO1FBQ2pCO1lBQ0VDLElBQUk7WUFDSkMsTUFBTTtZQUNOQyxhQUFhO1lBQ2JDLE9BQU87WUFDUEMsT0FBTztRQUNUO1FBQ0E7WUFDRUosSUFBSTtZQUNKQyxNQUFNO1lBQ05DLGFBQWE7WUFDYkMsT0FBTztZQUNQQyxPQUFPO1FBQ1Q7UUFDQTtZQUNFSixJQUFJO1lBQ0pDLE1BQU07WUFDTkMsYUFBYTtZQUNiQyxPQUFPO1lBQ1BDLE9BQU87UUFDVDtLQUNEO0lBRUQscUJBQ0UsOERBQUNDO1FBQUlDLFdBQVU7OzBCQUNiLDhEQUFDQztnQkFBR0QsV0FBVTswQkFBMEI7Ozs7OzswQkFFeEMsOERBQUNEO2dCQUFJQyxXQUFVOzBCQUNaUCxXQUFXUyxHQUFHLENBQUMsQ0FBQ0MscUJBQ2YsOERBQUNKO3dCQUFrQkMsV0FBVTs7MENBQzNCLDhEQUFDRDtnQ0FBSUMsV0FBVTs7Ozs7OzBDQUdmLDhEQUFDRDtnQ0FBSUMsV0FBVTs7a0RBQ2IsOERBQUNJO3dDQUFHSixXQUFVO2tEQUE4QkcsS0FBS1IsSUFBSTs7Ozs7O2tEQUNyRCw4REFBQ1U7d0NBQUVMLFdBQVU7a0RBQXNCRyxLQUFLUCxXQUFXOzs7Ozs7a0RBQ25ELDhEQUFDRzt3Q0FBSUMsV0FBVTs7MERBQ2IsOERBQUNNO2dEQUFLTixXQUFVOzBEQUFtQ0csS0FBS04sS0FBSzs7Ozs7OzBEQUM3RCw4REFBQ1U7Z0RBQU9QLFdBQVU7MERBQTZEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O3VCQVQzRUcsS0FBS1QsRUFBRTs7Ozs7Ozs7Ozs7Ozs7OztBQW1CM0IiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zb3VuZC1yZW50YWwtYXBwLy4vc3JjL2FwcC9jYXRhbG9ndWUvcGFnZS5qcz9hNjRmIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENhdGFsb2d1ZSgpIHtcbiAgY29uc3QgZXF1aXBtZW50cyA9IFtcbiAgICB7XG4gICAgICBpZDogMSxcbiAgICAgIG5hbWU6IFwiRW5jZWludGUgQWN0aXZlIDEwMDBXXCIsXG4gICAgICBkZXNjcmlwdGlvbjogXCJFbmNlaW50ZSBwcm9mZXNzaW9ubmVsbGUgYXZlYyBhbXBsaWZpY2F0aW9uIGludMOpZ3LDqWVcIixcbiAgICAgIHByaWNlOiBcIjgw4oKsL2pvdXJcIixcbiAgICAgIGltYWdlOiBcIi9pbWFnZXMvc3BlYWtlci5qcGdcIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDIsXG4gICAgICBuYW1lOiBcIlRhYmxlIGRlIE1peGFnZSAxNiBWb2llc1wiLFxuICAgICAgZGVzY3JpcHRpb246IFwiQ29uc29sZSBkZSBtaXhhZ2UgbnVtw6lyaXF1ZSBwcm9mZXNzaW9ubmVsbGVcIixcbiAgICAgIHByaWNlOiBcIjEyMOKCrC9qb3VyXCIsXG4gICAgICBpbWFnZTogXCIvaW1hZ2VzL21peGVyLmpwZ1wiXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogMyxcbiAgICAgIG5hbWU6IFwiS2l0IE1pY3JvcGhvbmVzXCIsXG4gICAgICBkZXNjcmlwdGlvbjogXCJFbnNlbWJsZSBkZSA0IG1pY3JvcGhvbmVzIGR5bmFtaXF1ZXMgYXZlYyBzdXBwb3J0c1wiLFxuICAgICAgcHJpY2U6IFwiNjDigqwvam91clwiLFxuICAgICAgaW1hZ2U6IFwiL2ltYWdlcy9taWNzLmpwZ1wiXG4gICAgfVxuICBdO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgbXgtYXV0byBweC00IHB5LThcIj5cbiAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBmb250LWJvbGQgbWItOFwiPkNhdGFsb2d1ZSBkZXMgw4lxdWlwZW1lbnRzPC9oMT5cbiAgICAgIFxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy0zIGdhcC02XCI+XG4gICAgICAgIHtlcXVpcG1lbnRzLm1hcCgoaXRlbSkgPT4gKFxuICAgICAgICAgIDxkaXYga2V5PXtpdGVtLmlkfSBjbGFzc05hbWU9XCJiZy13aGl0ZSByb3VuZGVkLWxnIHNoYWRvdy1tZCBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaC00OCBiZy1ncmF5LTIwMFwiPlxuICAgICAgICAgICAgICB7LyogUGxhY2Vob2xkZXIgcG91ciBsZXMgaW1hZ2VzICovfVxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInAtNFwiPlxuICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC14bCBmb250LXNlbWlib2xkIG1iLTJcIj57aXRlbS5uYW1lfTwvaDM+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZ3JheS02MDAgbWItNFwiPntpdGVtLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWJsdWUtNjAwXCI+e2l0ZW0ucHJpY2V9PC9zcGFuPlxuICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYmctYmx1ZS01MDAgdGV4dC13aGl0ZSBweC00IHB5LTIgcm91bmRlZCBob3ZlcjpiZy1ibHVlLTYwMFwiPlxuICAgICAgICAgICAgICAgICAgUsOpc2VydmVyXG4gICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICkpfVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiQ2F0YWxvZ3VlIiwiZXF1aXBtZW50cyIsImlkIiwibmFtZSIsImRlc2NyaXB0aW9uIiwicHJpY2UiLCJpbWFnZSIsImRpdiIsImNsYXNzTmFtZSIsImgxIiwibWFwIiwiaXRlbSIsImgzIiwicCIsInNwYW4iLCJidXR0b24iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./src/app/catalogue/page.js\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\pc\CascadeProjects\sound-rental-app\src\app\catalogue\page.js`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
 /***/ }),
 
@@ -170,7 +353,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fcatalogue%2Fpage&page=%2Fcatalogue%2Fpage&appPaths=%2Fcatalogue%2Fpage&pagePath=private-next-app-dir%2Fcatalogue%2Fpage.js&appDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/@supabase","vendor-chunks/tr46","vendor-chunks/whatwg-url","vendor-chunks/webidl-conversions"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fcatalogue%2Fpage&page=%2Fcatalogue%2Fpage&appPaths=%2Fcatalogue%2Fpage&pagePath=private-next-app-dir%2Fcatalogue%2Fpage.js&appDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cpc%5CCascadeProjects%5Csound-rental-app&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

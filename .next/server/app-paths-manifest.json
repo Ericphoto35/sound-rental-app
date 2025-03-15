@@ -1,6 +1,7 @@
 {
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
+  "/admin/page": "app/admin/page.js",
   "/catalogue/page": "app/catalogue/page.js",
-  "/reservations/page": "app/reservations/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/api/equipment/route": "app/api/equipment/route.js"
 }
