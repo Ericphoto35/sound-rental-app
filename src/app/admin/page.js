@@ -1,195 +1,206 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Button, TextField, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { supabase } from '../../utils/supabase';
+import {
+  Container,
+  Typography,
+  Button,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  Box,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  TextField,
+} from '@mui/material';
+import AdminNav from '../../components/AdminNav';
+import ProtectedRoute from '../../components/ProtectedRoute';
+import Footer from '../../components/Footer';
 
 export default function AdminPage() {
   const [equipment, setEquipment] = useState([]);
   const [openDialog, setOpenDialog] = useState(false);
-  const [currentItem, setCurrentItem] = useState({ name: '', description: '', price: '', category: '', imageUrl: '' });
-  const [isEditing, setIsEditing] = useState(false);
+  const [newEquipment, setNewEquipment] = useState({
+    name: '',
+    description: '',
+    price: '',
+    category: '',
+    status: 'disponible',
+  });
 
   useEffect(() => {
     fetchEquipment();
   }, []);
 
-  const fetchEquipment = async () => {
-    try {
-      const response = await fetch('/api/equipment');
-      const data = await response.json();
-      setEquipment(data);
-    } catch (error) {
-      console.error('Error fetching equipment:', error);
-    }
-  };
-
-  const handleOpenDialog = (item = null) => {
-    if (item) {
-      setCurrentItem(item);
-      setIsEditing(true);
+  async function fetchEquipment() {
+    const { data, error } = await supabase
+      .from('equipment')
+      .select('*')
+      .order('name');
+    
+    if (error) {
+      console.error('Erreur lors de la récupération des équipements:', error);
     } else {
-      setCurrentItem({ name: '', description: '', price: '', category: '', imageUrl: '' });
-      setIsEditing(false);
+      setEquipment(data);
     }
-    setOpenDialog(true);
-  };
+  }
 
-  const handleCloseDialog = () => {
-    setOpenDialog(false);
-    setCurrentItem({ name: '', description: '', price: '', category: '', imageUrl: '' });
-    setIsEditing(false);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setCurrentItem(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async () => {
-    try {
-      const url = isEditing ? `/api/equipment/${currentItem.id}` : '/api/equipment';
-      const method = isEditing ? 'PUT' : 'POST';
-
-      const response = await fetch(url, {
-        method,
-        headers: {
-          'Content-Type': 'application/json',
+  const handleAddEquipment = async () => {
+    const { data, error } = await supabase
+      .from('equipment')
+      .insert([
+        {
+          name: newEquipment.name,
+          description: newEquipment.description,
+          price: parseFloat(newEquipment.price),
+          category: newEquipment.category,
+          status: newEquipment.status,
         },
-        body: JSON.stringify(currentItem),
-      });
+      ])
+      .select();
 
-      if (response.ok) {
-        fetchEquipment();
-        handleCloseDialog();
-      }
-    } catch (error) {
-      console.error('Error saving equipment:', error);
+    if (error) {
+      console.error('Erreur lors de l\'ajout:', error);
+    } else {
+      setEquipment([...equipment, data[0]]);
+      setOpenDialog(false);
+      setNewEquipment({
+        name: '',
+        description: '',
+        price: '',
+        category: '',
+        status: 'disponible',
+      });
     }
   };
 
-  const handleDelete = async (id) => {
-    if (confirm('Êtes-vous sûr de vouloir supprimer cet équipement ?')) {
-      try {
-        const response = await fetch(`/api/equipment/${id}`, {
-          method: 'DELETE',
-        });
+  const handleDeleteEquipment = async (id) => {
+    const { error } = await supabase
+      .from('equipment')
+      .delete()
+      .eq('id', id);
 
-        if (response.ok) {
-          fetchEquipment();
-        }
-      } catch (error) {
-        console.error('Error deleting equipment:', error);
-      }
+    if (error) {
+      console.error('Erreur lors de la suppression:', error);
+    } else {
+      setEquipment(equipment.filter((item) => item.id !== id));
     }
   };
 
   return (
-    <div className="p-8">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Administration du Matériel</h1>
-        <Button 
-          variant="contained" 
-          color="primary" 
-          onClick={() => handleOpenDialog()}
-        >
-          Ajouter un équipement
-        </Button>
+    <ProtectedRoute>
+      <div className="flex flex-col min-h-screen">
+        <AdminNav />
+        <Container className="flex-grow" sx={{ mt: 4, mb: 4 }}>
+          <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
+            <Typography variant="h4" component="h1">
+              Administration
+            </Typography>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => setOpenDialog(true)}
+            >
+              Ajouter un équipement
+            </Button>
+          </Box>
+
+          <TableContainer component={Paper}>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Nom</TableCell>
+                  <TableCell>Description</TableCell>
+                  <TableCell>Prix</TableCell>
+                  <TableCell>Catégorie</TableCell>
+                  <TableCell>Statut</TableCell>
+                  <TableCell>Actions</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {equipment.map((item) => (
+                  <TableRow key={item.id}>
+                    <TableCell>{item.name}</TableCell>
+                    <TableCell>{item.description}</TableCell>
+                    <TableCell>{item.price}€</TableCell>
+                    <TableCell>{item.category}</TableCell>
+                    <TableCell>{item.status}</TableCell>
+                    <TableCell>
+                      <Button
+                        variant="outlined"
+                        color="error"
+                        size="small"
+                        onClick={() => handleDeleteEquipment(item.id)}
+                      >
+                        Supprimer
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+
+          <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
+            <DialogTitle>Ajouter un équipement</DialogTitle>
+            <DialogContent>
+              <TextField
+                autoFocus
+                margin="dense"
+                label="Nom"
+                fullWidth
+                value={newEquipment.name}
+                onChange={(e) =>
+                  setNewEquipment({ ...newEquipment, name: e.target.value })
+                }
+              />
+              <TextField
+                margin="dense"
+                label="Description"
+                fullWidth
+                multiline
+                rows={3}
+                value={newEquipment.description}
+                onChange={(e) =>
+                  setNewEquipment({ ...newEquipment, description: e.target.value })
+                }
+              />
+              <TextField
+                margin="dense"
+                label="Prix"
+                fullWidth
+                type="number"
+                value={newEquipment.price}
+                onChange={(e) =>
+                  setNewEquipment({ ...newEquipment, price: e.target.value })
+                }
+              />
+              <TextField
+                margin="dense"
+                label="Catégorie"
+                fullWidth
+                value={newEquipment.category}
+                onChange={(e) =>
+                  setNewEquipment({ ...newEquipment, category: e.target.value })
+                }
+              />
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={() => setOpenDialog(false)}>Annuler</Button>
+              <Button onClick={handleAddEquipment} variant="contained" color="primary">
+                Ajouter
+              </Button>
+            </DialogActions>
+          </Dialog>
+        </Container>
+        <Footer />
       </div>
-
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Nom</TableCell>
-              <TableCell>Description</TableCell>
-              <TableCell>Prix</TableCell>
-              <TableCell>Catégorie</TableCell>
-              <TableCell>Image URL</TableCell>
-              <TableCell>Actions</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {equipment.map((item) => (
-              <TableRow key={item.id}>
-                <TableCell>{item.name}</TableCell>
-                <TableCell>{item.description}</TableCell>
-                <TableCell>{item.price}€</TableCell>
-                <TableCell>{item.category}</TableCell>
-                <TableCell>{item.imageUrl}</TableCell>
-                <TableCell>
-                  <Button 
-                    color="primary" 
-                    onClick={() => handleOpenDialog(item)}
-                    className="mr-2"
-                  >
-                    Modifier
-                  </Button>
-                  <Button 
-                    color="error" 
-                    onClick={() => handleDelete(item.id)}
-                  >
-                    Supprimer
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-      <Dialog open={openDialog} onClose={handleCloseDialog}>
-        <DialogTitle>{isEditing ? 'Modifier l\'équipement' : 'Ajouter un équipement'}</DialogTitle>
-        <DialogContent>
-          <div className="space-y-4 mt-4">
-            <TextField
-              fullWidth
-              label="Nom"
-              name="name"
-              value={currentItem.name}
-              onChange={handleInputChange}
-            />
-            <TextField
-              fullWidth
-              label="Description"
-              name="description"
-              value={currentItem.description}
-              onChange={handleInputChange}
-              multiline
-              rows={3}
-            />
-            <TextField
-              fullWidth
-              label="Prix"
-              name="price"
-              type="number"
-              value={currentItem.price}
-              onChange={handleInputChange}
-            />
-            <TextField
-              fullWidth
-              label="Catégorie"
-              name="category"
-              value={currentItem.category}
-              onChange={handleInputChange}
-            />
-            <TextField
-              fullWidth
-              label="URL de l'image"
-              name="imageUrl"
-              value={currentItem.imageUrl}
-              onChange={handleInputChange}
-            />
-          </div>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseDialog}>Annuler</Button>
-          <Button onClick={handleSubmit} variant="contained" color="primary">
-            {isEditing ? 'Modifier' : 'Ajouter'}
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </div>
+    </ProtectedRoute>
   );
 }
