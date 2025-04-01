@@ -39,7 +39,7 @@ export default function MainNav() {
   };
 
   return (
-    <nav className="bg-black text-white relative">
+    <nav className="bg-black text-white relative z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold" onClick={closeMenu}>
@@ -92,7 +92,7 @@ export default function MainNav() {
 
         {/* Menu mobile */}
         <div 
-          className={`lg:hidden fixed left-0 right-0 bg-black shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
+          className={`lg:hidden fixed left-0 right-0 bg-black shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-40 ${
             isMenuOpen 
               ? 'opacity-100 max-h-[400px] border-t border-gray-800' 
               : 'opacity-0 max-h-0'

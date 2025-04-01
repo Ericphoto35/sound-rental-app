@@ -23,7 +23,7 @@ export default function AdminNav() {
   };
 
   return (
-    <nav className="bg-blue-600 text-white relative">
+    <nav className="bg-blue-600 text-white relative z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/admin" className="text-xl font-bold" onClick={closeMenu}>
@@ -65,7 +65,7 @@ export default function AdminNav() {
 
         {/* Menu mobile */}
         <div 
-          className={`lg:hidden fixed left-0 right-0 bg-blue-600 shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
+          className={`lg:hidden fixed left-0 right-0 bg-blue-600 shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-40 ${
             isMenuOpen 
               ? 'opacity-100 max-h-[400px] border-t border-blue-500' 
               : 'opacity-0 max-h-0'
