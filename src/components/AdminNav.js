@@ -65,9 +65,12 @@ export default function AdminNav() {
 
         {/* Menu mobile */}
         <div 
-          className={`lg:hidden absolute top-16 left-0 right-0 bg-blue-600 transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          className={`lg:hidden fixed left-0 right-0 bg-blue-600 shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
+            isMenuOpen 
+              ? 'opacity-100 max-h-[400px] border-t border-blue-500' 
+              : 'opacity-0 max-h-0'
           }`}
+          style={{ top: '64px' }}
         >
           <div className="flex flex-col space-y-4 p-4">
             <Link 
