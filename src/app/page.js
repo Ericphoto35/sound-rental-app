@@ -55,41 +55,6 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4">
-            {/* Carte Catalogue */}
-            <Link
-              href="/catalogue"
-              className="flex flex-col bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex-grow mx-auto border"
-            >
-              <h2 className="text-2xl font-semibold mb-4">Catalogue</h2>
-              <p className="text-gray-600">
-                Découvrez notre gamme complète d'équipements de sonorisation
-              </p>
-            </Link>
-
-            {/* Carte Réservations */}
-            <Link
-              href="/reservations"
-              className="flex flex-col bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex-grow mx-auto border"
-            >
-              <h2 className="text-2xl font-semibold mb-4">Réservations</h2>
-              <p className="text-gray-600">
-                Gérez vos réservations et consultez les disponibilités
-              </p>
-            </Link>
-
-            {/* Carte Contact */}
-            <Link
-              href="/contact"
-              className="flex flex-col bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex-grow mx-auto border"
-            >
-              <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-              <p className="text-gray-600">
-                Besoin d'aide ? Contactez notre équipe
-              </p>
-            </Link>
-          </div>
-
           <section id="equipment" className="py-20 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
