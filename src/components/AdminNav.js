@@ -1,6 +1,6 @@
 'use client';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import { supabase } from '../utils/supabase';
+import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
 
 export default function AdminNav() {
