@@ -1,27 +1,108 @@
 'use client';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 export default function AdminNav() {
   const router = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
     router.push('/');
-    router.refresh();
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
-    <AppBar position="static" sx={{ mb: 4 }}>
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Administration
-        </Typography>
-        <Button color="inherit" onClick={handleLogout}>
-          Déconnexion
-        </Button>
-      </Toolbar>
-    </AppBar>
+    <nav className="bg-blue-600 text-white relative">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <Link href="/admin" className="text-xl font-bold" onClick={closeMenu}>
+            Admin Panel
+          </Link>
+
+          {/* Menu Hamburger pour mobile */}
+          <button 
+            className="lg:hidden p-2 hover:bg-blue-700 rounded-lg transition-colors"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+
+          {/* Menu pour desktop */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <Link href="/" className="hover:text-blue-200 transition-colors">
+              Retour au site
+            </Link>
+            <Link href="/admin/equipements" className="hover:text-blue-200 transition-colors">
+              Équipements
+            </Link>
+            <Link href="/admin/reservations" className="hover:text-blue-200 transition-colors">
+              Réservations
+            </Link>
+            <button 
+              onClick={handleLogout}
+              className="hover:text-blue-200 transition-colors cursor-pointer"
+            >
+              Déconnexion
+            </button>
+          </div>
+        </div>
+
+        {/* Menu mobile */}
+        <div 
+          className={`lg:hidden absolute top-16 left-0 right-0 bg-blue-600 transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
+        >
+          <div className="flex flex-col space-y-4 p-4">
+            <Link 
+              href="/" 
+              className="hover:text-blue-200 transition-colors py-2"
+              onClick={closeMenu}
+            >
+              Retour au site
+            </Link>
+            <Link 
+              href="/admin/equipements" 
+              className="hover:text-blue-200 transition-colors py-2"
+              onClick={closeMenu}
+            >
+              Équipements
+            </Link>
+            <Link 
+              href="/admin/reservations" 
+              className="hover:text-blue-200 transition-colors py-2"
+              onClick={closeMenu}
+            >
+              Réservations
+            </Link>
+            <button 
+              onClick={() => {
+                handleLogout();
+                closeMenu();
+              }}
+              className="hover:text-blue-200 transition-colors cursor-pointer text-left py-2"
+            >
+              Déconnexion
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
